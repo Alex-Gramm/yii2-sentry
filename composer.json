@@ -1,0 +1,29 @@
+{
+  "name": "gramm/yii2-sentry",
+  "description": "Yii2 logger for Sentry",
+  "keywords": [
+    "sentry",
+    "yii2"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": "dist",
+    "process-timeout": 1800
+  },
+  "require": {
+    "yiisoft/yii2": "~2.0",
+    "fxp/composer-asset-plugin":"~1.4",
+    "sentry/sentry": "^2.0",
+    "php-http/guzzle6-adapter": "^2.0"
+  },
+  "require-dev": {
+    "codeception/codeception": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "gramm\\sentry\\": "src"
+    }
+  }
+}
